@@ -28,47 +28,57 @@ ul {
    
   /** bottom **/
   
-  .bottom {
-    margin: 0.5vw;
-    font-size: 0;
-    flex-flow: row wrap;
-    display: flex;
-    height: 200px;
-  }
-  
-  .bottom div {
-    flex: auto;
-    width: 200px;
-    margin: 0.5vw;
-    border-style: solid;
-    border-color: black;
-  }
-  
-  .bottom div {
+  .bottomTop {
     width: 100%;
+    height: 400px;
+    box-sizing: border-box;
+  }
+
+  .specials {
+    float: left;
+    width: 20%;
+    height: 300px;
+    border: 5px solid red;
+  }
+
+  .attendanceTotals{
+    float: left;
+    width: 70%;
+    height: 300px;
+    border: 5px solid red;
+  }
+
+  .bottomBottom {
+    width: 100%;
+    height: 400px;
+  }
+
+  .yourAttendanceThisWeek {
+    float: left;
+    width: 70%;
+    height: 300px;
+    border: 5px solid red;
   }
   
-  .bottom > div {
-    position: relative;
+  .foodWishes {
+    float: left;
+    width: 20%;
+    height: 300px;
+    border: 5px solid red;
   }
-  
+
   .boxText {
     color: black;
     font-size: 20px;
-    top: 0;
-    height: 12%;
-    width: 100%;
     font: bold 24px/45px Helvetica, Sans-Serif;
     letter-spacing: -1px;
     opacity: 0.7;
-    position: absolute;
-    text-align: center;
-  }
+  } 
   
   
   /* media queries voor responsiveness */
   
-  @media screen and (max-width: 1024px) {
+  /* @media screen and (max-width: 1024px) {
     .bottom > div {
       width: 33%;
     }
@@ -84,6 +94,6 @@ ul {
     .bottom > div {
       width: 25%;
     }
-  }
+  } */
 
       
