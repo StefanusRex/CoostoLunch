@@ -1,52 +1,32 @@
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-
-  }
-  
-  li {
-    float: left;
-
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
-   
+body {
+  padding: 60px;
+}
   /** bottom **/
   
   .bottomTop {
-    padding: 30px;
+    margin-top: 100px;
+    /* padding: 30px; */
     width: 100%;
     height: 400px;
   }
 
   .specials {
-    border: 5px solid red;
+    /* border: 5px solid red; */
   }
+  
+.fa-pizza-slice {
+  font-size:24px
+}
 
   .attendanceTotals{
-    margin-left: 5%;
+    /* margin-left: 5%; */
     width: 60%;
     height: 300px;
-    border: 5px solid red;
+    /* border: 5px solid red; */
   }
 
   .bottomBottom {
-    padding: 30px;
+    /* padding: 30px; */
     width: 100%;
     height: 400px;
   }
@@ -54,15 +34,15 @@ ul {
   .yourAttendanceThisWeek {
     width: 70%;
     height: 300px;
-    border: 5px solid red;
+    /* border: 5px solid red; */
   }
   
   .foodWishes {
-    margin-left: 5%;
+    /* margin-left: 5%; */
 
     width: 20%;
     height: 300px;
-    border: 5px solid red;
+    /* border: 5px solid red; */
   }
 
   .boxText {
