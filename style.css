@@ -52,6 +52,9 @@ body {
     letter-spacing: -1px;
     opacity: 0.7;
   } 
+  .fullSchedule {
+    float: right;
+  }
   
   
   /* media queries voor responsiveness */
