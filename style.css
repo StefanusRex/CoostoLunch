@@ -29,39 +29,37 @@ ul {
   /** bottom **/
   
   .bottomTop {
+    padding: 30px;
     width: 100%;
     height: 400px;
-    box-sizing: border-box;
   }
 
   .specials {
-    float: left;
-    width: 20%;
-    height: 300px;
     border: 5px solid red;
   }
 
   .attendanceTotals{
-    float: left;
-    width: 70%;
+    margin-left: 5%;
+    width: 60%;
     height: 300px;
     border: 5px solid red;
   }
 
   .bottomBottom {
+    padding: 30px;
     width: 100%;
     height: 400px;
   }
 
   .yourAttendanceThisWeek {
-    float: left;
     width: 70%;
     height: 300px;
     border: 5px solid red;
   }
   
   .foodWishes {
-    float: left;
+    margin-left: 5%;
+
     width: 20%;
     height: 300px;
     border: 5px solid red;
