@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <title>Coosto Lunch</title>
 </head>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -40,109 +40,82 @@
             Today's specials
             </i>
         </h2>
+        <h3>
+          Gerechten
+        </h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nobis.</p>
+        <h3>
+          Allergies and food wishes
+        </h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, hic.</p>
         </div>
-        <div class="col-md-8 attendanceTotals">
-          <h2 class="boxText">Attendance</h2>
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Attending</th>
-                <th scope="col">Day</th>
-                <th scope="col">Start time</th>
-                <th scope="col">Estimated attendance</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span><div class="ripple-container"></div></span>
-                    </label>
-                  </div> 
-                </th>
-                <td class="align-middle">Monday</td>
-                <td>
-                  <div class="input-group">
-                    <select class="custom-select" style="border: none" id="inputGroupSelect04">
-                      <option selected>12:00</option>
-                      <option value="1">12:30</option>
-                      <option value="2">13:00</option>
-                      <option value="3">13:30</option>
-                    </select>
-                  </div>
-                  </td>
-                  <td class="align-middle">
-                    53
-                  </td class="align-middle">
-                    
-                </tr>
-              <tr>
-                <th scope="row">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span><div class="ripple-container"></div></span>
-                    </label>
-                  </div> 
-                </th>
-                <td class="align-middle">Tuesday</td class="align-middle">
-                <td>
-                  <div class="input-group">
-                    <select class="custom-select" style="border: none" id="inputGroupSelect04">
-                      <option selected>12:00</option>
-                      <option value="1">12:30</option>
-                      <option value="2">13:00</option>
-                      <option value="3">13:30</option>
-                    </select>
-                  </div>
-                </td>
-                <td class="align-middle">26</td class="align-middle">
-              </tr>
-              <tr>
-                <th scope="row">
-                  <div class="checkbox">
-                    <label>
-                      <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span><div class="ripple-container"></div></span>
-                    </label>
-                  </div> 
-                </th>
-                <td class="align-middle">Wednesday</td class="align-middle">
-                <td>
-                  <div class="input-group">
-                    <select class="custom-select" style="border: none" id="inputGroupSelect04">
-                      <option selected>12:00</option>
-                      <option value="1">12:30</option>
-                      <option value="2">13:00</option>
-                      <option value="3">13:30</option>
-                    </select>
-                  </div>
-                </td>
-                <td class="align-middle">19</td class="align-middle">
-              </tr>
-            </tbody>
-          </table>
-          <button type="button" class="btn btn-primary fullSchedule">Full schedule</button>
+        <div class="col-md-7 attendanceTotals">
+        <h2 class="boxText">
+            Attendance totals
+        </h2>
         </div>
     </div>
     <div class="row bottomBottom">
-    <div class="col-md-8 yourAttendanceThisWeek">
+    <div class="col-md-7 yourAttendanceThisWeek">
       <h2 class="boxText">
         Your attendance this week
       </h2>
     </div>
     <div class="col-md-4 foodWishes">
       <h2 class="boxText">
+        <i class="fas fa-thumbs-up">
         Food wishes
+      </i>
       </h2>
+      <table class="table">
+        <p>What would you like to eat next friday?</p>
+        <tbody>
+          <tr>
+            <th scope="row">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">
+                </label>
+              </div> 
+            </th>
+            <td class="align-middle">Monday</td>
+            <td>
+              <div class="input-group">
+              </div>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">
+                <div class="checkbox">
+                  <label>
+                    <input type="checkbox">
+                  </label>
+                </div> 
+              </th>
+              <td class="align-middle">Tuesday</td>
+              <td>
+                <div class="input-group">
+                </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox">
+                    </label>
+                  </div> 
+                </th>
+                <td class="align-middle">Wednesday</td>
+                <td>
+                  <div class="input-group">
+                  </div>
+                  </td>
+                </tr>
+        </tbody>
+      </table>
     </div>
   </div>
-  
-  <script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
-  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
-  
       
 </body>
 </html>
