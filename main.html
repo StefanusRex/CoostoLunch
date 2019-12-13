@@ -36,24 +36,28 @@
 <body>
     <div class="row bottomTop">
         <div class="col-md-4 specials">
-        <h2 class="boxText">
-            <i class="fas fa-pizza-slice">
-            Today's specials
-            </i>
-        </h2>
-        <h3>
-          Gerechten
-        </h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, nobis.</p>
-        <h3>
-          Allergies and food wishes
-        </h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, hic.</p>
+          <h2 class="boxText">
+              <i class="fas fa-pizza-slice">
+              Today's specials
+              </i>
+          </h2>
+          <h3>
+            Gerechten
+          </h3>
+          <p>Pumpkin Soup with meatballs</p>
+          <p>Frikandelbroodjes</p>
+          <h3>
+           Allergies and food wishes
+          </h3>
+          <p>Vegan food today!</p>
         </div>
         <div class="col-md-7 attendanceTotals">
-        <h2 class="boxText">
-            Attendance totals
-        </h2>
+          <h2 class="boxText">
+              Attendance totals
+          </h2>
+          <div><canvas  id="myChart"></canvas></div>
+         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+         <script src="graph.js"></script>
         </div>
     </div>
     <div class="row bottomBottom">
@@ -62,7 +66,7 @@
        class="boxText">
         Your attendance this week
       </h2>
-      <table class="table">
+      <table class="table table-borderless">
         <thead>
           <tr>
             <th scope="col">Attending</th>
@@ -140,6 +144,7 @@
           </tr>
         </tbody>
       </table>
+      <button class="btn btn-raised btn-primary" style="float: right;">Full schedule</button>
     </div>
     <div class="col-md-4 foodWishes">
       <h2 class="boxText">
@@ -147,18 +152,18 @@
         Food wishes
       </i>
       </h2>
-      <table class="table">
-        <p>What would you like to eat next friday?</p>
+      <table class="table table-borderless">
+        <p>What would you like to eat next Friday?</p>
         <tbody>
           <tr>
             <th scope="row">
               <div class="checkbox">
                 <label>
-                  <input type="checkbox">
+                  <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span></span><span class="checkbox-decorator"><span class="check"></span><div class="ripple-container"></div></span>
                 </label>
-              </div> 
+              </div>  
             </th>
-            <td class="align-middle">Monday</td>
+            <td class="align-middle">Frikandelbroodjes</td>
             <td>
               <div class="input-group">
               </div>
@@ -168,11 +173,11 @@
               <th scope="row">
                 <div class="checkbox">
                   <label>
-                    <input type="checkbox">
+                    <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span></span><span class="checkbox-decorator"><span class="check"></span><div class="ripple-container"></div></span>
                   </label>
                 </div> 
               </th>
-              <td class="align-middle">Tuesday</td>
+              <td class="align-middle">Piccolini's</td>
               <td>
                 <div class="input-group">
                 </div>
@@ -182,11 +187,11 @@
                 <th scope="row">
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox">
+                      <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span></span><span class="checkbox-decorator"><span class="check"></span><div class="ripple-container"></div></span>
                     </label>
                   </div> 
                 </th>
-                <td class="align-middle">Wednesday</td>
+                <td class="align-middle">Chicken paninis</td>
                 <td>
                   <div class="input-group">
                   </div>
