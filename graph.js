@@ -1,9 +1,6 @@
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
-    // The type of chart we want to create
     type: 'bar',
-
-    // The data for our dataset
     data: {
         labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
         datasets: [{
@@ -12,11 +9,15 @@ var chart = new Chart(ctx, {
             data: [87, 94, 56, 85, 97, 0] // Placeholder data
         }]
     },
-
-    // Configuration options go here
     options: {
         legend: {
             display: false
+        },
+        scales: {
+            xAxes: [{
+                categoryPercentage: 0.5,
+                barPercentage: 0.5
+            }]
         }
     }
 });
