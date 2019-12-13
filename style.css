@@ -10,9 +10,6 @@ body {
     height: 400px;
   }
 
-  .specials {
-    border: 2px solid red;
-  }
 
 .fas {
   font-size:24px
@@ -20,7 +17,6 @@ body {
 
   .attendanceTotals{
     margin-left: 100px;
-    border: 2px solid red;
   }
 
   .bottomBottom {
@@ -28,14 +24,12 @@ body {
     width: 100%;
     height: 400px;
   }
-
-  .yourAttendanceThisWeek {
-    border: 2px solid red;
-  }
   
   .foodWishes {
     margin-left: 100px;
-    border: 2px solid red;
+  }
+  .card {
+    min-height: 400px;
   }
 
   .boxText {

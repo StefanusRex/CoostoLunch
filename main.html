@@ -1,206 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
-    <title>Coosto Lunch</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <link rel="stylesheet"
+    href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+    integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+  <title>Coosto Lunch</title>
 </head>
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">Carousel</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-        </li>
-      </ul>
-      <form class="form-inline [mt-2](https://jira.coosto.com/browse/mt-2) mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success [my-2](https://jira.coosto.com/browse/my-2) my-sm-0" type="submit">Search</button>
-      </form>
-    </div>
+  <a class="navbar-brand" href="#">Carousel</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline [mt-2](https://jira.coosto.com/browse/mt-2) mt-md-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success [my-2](https://jira.coosto.com/browse/my-2) my-sm-0"
+        type="submit">Search</button>
+    </form>
+  </div>
 </nav>
+
 <body>
-    <div class="row bottomTop">
-        <div class="col-md-4 specials">
+  <div class="row bottomTop">
+    <div class="col-md-4 specials">
+      <div class="card">
+        <div class="card-body">
           <h2 class="boxText">
-              <i class="fas fa-pizza-slice">
+            <i class="fas fa-pizza-slice">
               Today's specials
-              </i>
+            </i>
           </h2>
-          <h3>
-            Gerechten
-          </h3>
-          <p>Pumpkin Soup with meatballs</p>
-          <p>Frikandelbroodjes</p>
-          <h3>
-           Allergies and food wishes
-          </h3>
+          <h6>
+            <strong>Gerechten</strong>
+          </h6>
+          <p>Pumpkin Soup with meatballs<br>
+          Frikandelbroodjes</p>
+          <h6>
+            <strong>Allergies and food wishes</strong>
+          </h6>
           <p>Vegan food today!</p>
         </div>
-        <div class="col-md-7 attendanceTotals">
-          <h2 class="boxText">
-              Attendance totals
-          </h2>
-          <div><canvas  id="myChart"></canvas></div>
-         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-         <script src="graph.js"></script>
-        </div>
+      </div>
     </div>
-    <div class="row bottomBottom">
-    <div class="col-md-7 yourAttendanceThisWeek">
-      <h2
-       class="boxText">
-        Your attendance this week
-      </h2>
-      <table class="table table-borderless">
-        <thead>
-          <tr>
-            <th scope="col">Attending</th>
-            <th scope="col">Day</th>
-            <th scope="col">Start time</th>
-            <th scope="col">Estimated attendance</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span></span><span class="checkbox-decorator"><span class="check"></span><div class="ripple-container"></div></span>
-                </label>
-              </div> 
-            </th>
-            <td class="align-middle">Monday</td>
-            <td>
-              <div class="input-group">
-                <select class="custom-select" style="border: none" id="inputGroupSelect04">
-                  <option selected>12:00</option>
-                  <option value="1">12:30</option>
-                  <option value="2">13:00</option>
-                  <option value="3">13:30</option>
-                </select>
-              </div>
-              </td>
-              <td class="align-middle">
-                53
-              </td class="align-middle">
 
-            </tr>
-          <tr>
-            <th scope="row">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span></span><span class="checkbox-decorator"><span class="check"></span><div class="ripple-container"></div></span>
-                </label>
-              </div> 
-            </th>
-            <td class="align-middle">Tuesday</td class="align-middle">
-            <td>
-              <div class="input-group">
-                <select class="custom-select" style="border: none" id="inputGroupSelect04">
-                  <option selected>12:00</option>
-                  <option value="1">12:30</option>
-                  <option value="2">13:00</option>
-                  <option value="3">13:30</option>
-                </select>
-              </div>
-            </td>
-            <td class="align-middle">26</td class="align-middle">
-          </tr>
-          <tr>
-            <th scope="row">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span></span><span class="checkbox-decorator"><span class="check"></span><div class="ripple-container"></div></span>
-                </label>
-              </div> 
-            </th>
-            <td class="align-middle">Wednesday</td class="align-middle">
-            <td>
-              <div class="input-group">
-                <select class="custom-select" style="border: none" id="inputGroupSelect04">
-                  <option selected>12:00</option>
-                  <option value="1">12:30</option>
-                  <option value="2">13:00</option>
-                  <option value="3">13:30</option>
-                </select>
-              </div>
-            </td>
-            <td class="align-middle">19</td class="align-middle">
-          </tr>
-        </tbody>
-      </table>
-      <button class="btn btn-raised btn-primary" style="float: right;">Full schedule</button>
+    <div class="col-md-7 attendanceTotals">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="boxText">
+            <i class="fas fa-chart-bar">
+            Attendance totals
+            </i>
+          </h2>
+          <div class="container" style="width: 600px; height: 300px;">
+            <canvas id="myChart" style="width: 80%;"></canvas>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script src="graph.js"></script>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row bottomBottom">
+    <div class="col-md-7 yourAttendanceThisWeek">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="boxText">
+            <i class="fas fa-user">
+            Your attendance this week
+            </i>
+          </h2>
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th scope="col">Attending</th>
+                <th scope="col">Day</th>
+                <th scope="col">Start time</th>
+                <th scope="col">Estimated attendance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span></span><span
+                        class="checkbox-decorator"><span class="check"></span>
+                        <div class="ripple-container"></div>
+                      </span>
+                    </label>
+                  </div>
+                </th>
+                <td class="align-middle">Monday</td>
+                <td>
+                  <div class="input-group">
+                    <select class="custom-select" style="border: none" id="inputGroupSelect04">
+                      <option selected>12:00</option>
+                      <option value="1">12:30</option>
+                      <option value="2">13:00</option>
+                      <option value="3">13:30</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="align-middle">
+                  53
+                </td class="align-middle">
+
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span></span><span
+                        class="checkbox-decorator"><span class="check"></span>
+                        <div class="ripple-container"></div>
+                      </span>
+                    </label>
+                  </div>
+                </th>
+                <td class="align-middle">Tuesday</td class="align-middle">
+                <td>
+                  <div class="input-group">
+                    <select class="custom-select" style="border: none" id="inputGroupSelect04">
+                      <option selected>12:00</option>
+                      <option value="1">12:30</o ption>
+                      <option value="2">13:00</option>
+                      <option value="3">13:30</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="align-middle">26</td class="align-middle">
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span></span><span
+                        class="checkbox-decorator"><span class="check"></span>
+                        <div class="ripple-container"></div>
+                      </span>
+                    </label>
+                  </div>
+                </th>
+                <td class="align-middle">Wednesday</td class="align-middle">
+                <td>
+                  <div class="input-group">
+                    <select class="custom-select" style="border: none" id="inputGroupSelect04">
+                      <option selected>12:00</option>
+                      <option value="1">12:30</option>
+                      <option value="2">13:00</option>
+                      <option value="3">13:30</option>
+                    </select>
+                  </div>
+                </td>
+                <td class="align-middle">19</td class="align-middle">
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn btn-raised btn-primary" style="float: right;">Full schedule</button>
+        </div>
+      </div>
     </div>
     <div class="col-md-4 foodWishes">
-      <h2 class="boxText">
-        <i class="fas fa-thumbs-up">
-        Food wishes
-      </i>
-      </h2>
-      <table class="table table-borderless">
-        <p>What would you like to eat next Friday?</p>
-        <tbody>
-          <tr>
-            <th scope="row">
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span></span><span class="checkbox-decorator"><span class="check"></span><div class="ripple-container"></div></span>
-                </label>
-              </div>  
-            </th>
-            <td class="align-middle">Frikandelbroodjes</td>
-            <td>
-              <div class="input-group">
-              </div>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">
-                <div class="checkbox">
-                  <label>
-                    <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span></span><span class="checkbox-decorator"><span class="check"></span><div class="ripple-container"></div></span>
-                  </label>
-                </div> 
-              </th>
-              <td class="align-middle">Piccolini's</td>
-              <td>
-                <div class="input-group">
-                </div>
+      <div class="card">
+        <div class="card-body">
+          <h2 class="boxText">
+            <i class="fas fa-thumbs-up">
+              Food wishes
+            </i>
+          </h2>
+          <table class="table table-borderless">
+            <p>What would you like to eat next Friday?</p>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span></span><span
+                        class="checkbox-decorator"><span class="check"></span>
+                        <div class="ripple-container"></div>
+                      </span>
+                    </label>
+                  </div>
+                </th>
+                <td class="align-middle">Frikandelbroodjes</td>
+                <td>
+                  <div class="input-group">
+                  </div>
                 </td>
               </tr>
               <tr>
                 <th scope="row">
                   <div class="checkbox">
                     <label>
-                      <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span></span><span class="checkbox-decorator"><span class="check"></span><div class="ripple-container"></div></span>
+                      <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span></span><span
+                        class="checkbox-decorator"><span class="check"></span>
+                        <div class="ripple-container"></div>
+                      </span>
                     </label>
-                  </div> 
+                  </div>
+                </th>
+                <td class="align-middle">Piccolini's</td>
+                <td>
+                  <div class="input-group">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"><span class="checkbox-decorator"><span class="check"></span></span><span
+                        class="checkbox-decorator"><span class="check"></span>
+                        <div class="ripple-container"></div>
+                      </span>
+                    </label>
+                  </div>
                 </th>
                 <td class="align-middle">Chicken paninis</td>
                 <td>
                   <div class="input-group">
                   </div>
-                  </td>
-                </tr>
-        </tbody>
-      </table>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <button class="btn btn-raised btn-primary" style="float: right;">Make suggestion</button>
+        </div>
+      </div>
     </div>
   </div>
-      
+
 </body>
+
 </html>
